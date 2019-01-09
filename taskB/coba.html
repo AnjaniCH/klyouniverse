@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BINGO</title>
+</head>
+<body>
+	<p id="para"> </p>
+	<table id="theTable" border="1" align="center" cols=""3>
+		<tr>
+			<td id="td1" onclick='content(this)'> 1</td>
+			<td id="td2" onclick='content(this)'> 3</td>
+			<td id="td3" onclick='content(this)'> 5</td>
+			<td id="td4" onclick='content(this)'> 7</td>
+			<td id="td5" onclick='content(this)'> 9</td>
+		</tr>
+		<tr>
+			<td id="td6" onclick='content(this)'> 11</td>
+			<td id="td7" onclick='content(this)'> 13</td>
+			<td id="td8" onclick='content(this)'> 15</td>
+			<td id="td9" onclick='content(this)'> 17</td>
+			<td id="td10" onclick='content(this)'> 19</td>
+		</tr>
+		<tr>
+			<td id="td11" onclick='content(this)'> 2</td>
+			<td id="td12" onclick='content(this)'> 4</td>
+			<td id="td13" onclick='content(this)'> 6</td>
+			<td id="td14" onclick='content(this)'> 8</td>
+			<td id="td15" onclick='content(this)'> 10</td>
+		</tr>
+		<tr>
+			<td id="td16" onclick='content(this)'> 12</td>
+			<td id="td17" onclick='content(this)'> 14</td>
+			<td id="td18" onclick='content(this)'> 16</td>
+			<td id="td19" onclick='content(this)'> 18</td>
+			<td id="td20" onclick='content(this)'> 20</td>
+		</tr>
+		<tr>
+			<td id="td21" onclick='content(this)'> 21</td>
+			<td id="td22" onclick='content(this)'> 23</td>
+			<td id="td23" onclick='content(this)'> 25</td>
+			<td id="td24" onclick='content(this)'> 22</td>
+			<td id="td25" onclick='content(this)'> 24</td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		function content(e){
+			var a = e.style.backgroundColor = "yellow";
+			var b = document.getElementById("td1").style.color = a.value;
+			var p = document.getElementById("para");
+			p.innerHTML = 'You clicked on cell' + ' ' + e.innerText;
+			b.innerHTML = 'click another box';
+		}
+	</script>
+
+</body>
+</html>
